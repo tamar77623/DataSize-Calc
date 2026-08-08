@@ -1,0 +1,91 @@
+/* إعادة ضبط التباعد واختيار خط عصري */
+* {
+    box-sizing: border-border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* لون داكن وأنيق بدلاً من الأسود الحاد */
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* لجعل المحتوى في منتصف الشاشة تماماً */
+}
+
+/* تحسين شكل الكارت/الحاوية */
+.contanier {
+    background-color: #1e293b; /* رمادي أزرق احترافي */
+    padding: 30px 25px;
+    border-radius: 16px; /* حواف دائرية ناعمة */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* ظلال لإعطاء عمق */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* تحسين شكل حقول الإدخال */
+input {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    background-color: #0f172a;
+    color: #38bdf8; /* لون أرقام واضح وجذاب */
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* تأثير عند الضغط أو الكتابة داخل الـ Input */
+input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+}
+button{
+    /* الشكل والحجم */
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    
+    /* الألوان والحدود */
+    color: #ffffff;
+    background: linear-gradient(135deg, #0284c7, #0369a1); /* تدرج أزرق عصري */
+    border: none;
+    border-radius: 10px; /* حواف دائرية ناعمة */
+    
+    /* الظلال والتأثيرات */
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+/* تأثير عند مرر الماوس (Hover) */
+button:hover {
+    transform: translateY(-2px); /* ارتفاق خفيف للأعلى */
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5);
+    background: linear-gradient(135deg, #0369a1, #0284c7);
+}
+
+/* تأثير عند الضغط (Click/Active) */
+button:active {
+    transform: translateY(0); /* العودة لمكانه */
+    box-shadow: 0 2px 8px rgba(2, 132, 199, 0.3);
+}
+
+/* حالة عدم التفعيل (Disabled) */
+button:disabled {
+    background: #64748b;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
